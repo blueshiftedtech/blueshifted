@@ -44,10 +44,18 @@
 			});
 
         // Owl Carousel
-        $(".owl-carousel").owlCarousel({
+        $("#car1").owlCarousel({
             items: 1,
             autoplay: true,
             autoplayHoverPause: true,
+            loop: true
+        });
+
+        $("#car2").owlCarousel({
+            items: 5,
+            autoplay: true,
+            autoplayHoverPause: true,
+            loop: true
         });
 
 	});
