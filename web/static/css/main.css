@@ -2446,3 +2446,12 @@
 .learned header p {
     text-align: left;
 }
+
+img.logo {
+	max-width: 250px;
+}
+
+.slogan {
+	text-align: left;
+	vertical-align: middle;
+}

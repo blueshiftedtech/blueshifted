@@ -10,6 +10,9 @@ from web.models import WebsiteEmailForm
 def home(request):
     return render(request, 'index.html')
 
+@require_http_methods(["GET"])
+def python(request):
+	return render(request, 'python.html')
 
 @require_http_methods(["GET", "POST"])
 def mail(request):
