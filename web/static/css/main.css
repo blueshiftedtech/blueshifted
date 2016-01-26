@@ -2247,6 +2247,10 @@
 				padding: 12em 0 12em 0;
 			}
 
+			#header.python {
+				padding: 9em 0 9em 0;
+			}
+
 		/* Main Sections */
 
 			.main > header {
