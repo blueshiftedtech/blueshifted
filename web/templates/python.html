@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Python Craftsmen{% endblock %}
+
+{% block header %}
+<div class="container">
+    <div class="row center-header">
+        <img src="{% static "images/python-logo-notext-35.png" %}" alt="" class="logo" />
+        <h1 class="slogan">Python Craftsmen<br />with startup experience.</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block introduction %}
+<header>
+    <div class="container">
+        <h2>We love Python.</h2>
+
+        <p style="text-align: left;">Blueshift is a group of Python craftsmen that also have a background in startups. We take on projects ranging from the MVP for a startup to assisting on development of large scale applications.
+        </p>
+
+    </div>
+</header>
+{% endblock %}
+
+{% block organizations %}
+<div id="row">
+    <img class="item" src="{% static "images/pyoh_logo.png"%}">
+    <img class="item" src="{% static "images/cm_logo.png"%}">
+    <img class="item" src="{% static "images/pycon_logo.png"%}">
+    <img class="item" src="{% static "images/pytn_logo.png"%}">
+</div>
+{% endblock %}

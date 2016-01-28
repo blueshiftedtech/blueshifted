@@ -2247,6 +2247,10 @@
 				padding: 12em 0 12em 0;
 			}
 
+			#header.python {
+				padding: 9em 0 9em 0;
+			}
+
 		/* Main Sections */
 
 			.main > header {
@@ -2445,4 +2449,59 @@
 
 .learned header p {
     text-align: left;
+}
+
+.scrolly {
+	clear: left;
+}
+
+@media screen and (min-width: 658px) {
+
+	img.logo {
+		max-width: 250px;
+		vertical-align: middle;
+		position: relative;
+	}
+
+	.slogan {
+		text-align: left;
+		vertical-align: middle;
+		display: inline-block;
+		position: relative;
+		top: 65px;
+	}
+
+	.scrolly {
+		top: 10px;
+	}
+
+	.center-header {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 657px) {
+
+	img.logo {
+		max-width: 250px;
+		vertical-align: middle;
+		position: relative;
+		margin: 0 auto;
+		width: 50%;
+		left: 25%;
+		right: 25%;
+	}
+
+	.slogan {
+		text-align: center;
+		vertical-align: middle;
+		display: inline-block;
+		position: relative;
+		top: 0px;
+		width: 100%;
+		padding-right: 10%;
+		padding-left: 10%;
+	}
 }
