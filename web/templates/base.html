@@ -1,0 +1,286 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="{% static "js/ie/html5shiv.js" %}"></script><![endif]-->
+        <link rel="stylesheet" href="{% static "css/owl.carousel.css"%}" />
+		<link rel="stylesheet" href="{% static "css/main.css"%}" />
+
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="{% static "css/ie8.css" %}" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="{% static "css/ie9.css" %}" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+                    {% block header %}{% endblock %}
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">Hello World. Meet Blueshift.</a>
+				</footer>
+			</section>
+
+		<!-- First -->
+			<section id="first" class="main">
+				{% block introduction %}{% endblock %}
+			</section>
+
+		<!-- Second -->
+			<section id="second" class="main">
+                {% block testimonials %}{% endblock %}
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(narrow)">
+								<section>
+									<h2>What good students become.</h2>
+									<p>
+										As entrepreneurs, we have been guided through fire and flame by the most
+                                        influential leaders in Central Ohio's business community. Today, we are
+                                        partnering with them to bring the most talented and experienced startup
+                                        technologists to entrepreneurs throughout the Ohio Valley.
+                                    </p>
+
+									<footer>
+										<a href="#third" class="button scrolly">Contribution is our passion.</a>
+									</footer>
+								</section>
+							</div>
+							<div class="8u 12u(narrow)">
+								<div class="row">
+									<div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/raymond.png" %}" alt="" />
+                                            <span class="contact-icon-set">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/in/kitanata" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                                <span class="contact-icon"><a href="mailto:raymond@blueshiftedtech.com" target="_blank"><span class="icon fa-envelope"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+									<div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/david.png" %}" alt="" />
+                                            <span class="contact-icon-set-right">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/pub/david-ricupero/24/7b5/277" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                                <span class="contact-icon"><a href="mailto:david@blueshiftedtech.com" target="_blank"><span class="icon fa-envelope"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+									<div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/brian.png" %}" alt="" />
+                                            <span class="contact-icon-set">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/in/briancostlow" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                                <span class="contact-icon"><a href="mailto:brian@blueshiftedtech.com" target="_blank"><span class="icon fa-envelope"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/mary.png" %}" alt="" />
+                                            <span class="contact-icon-set-right">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/in/mcbaylis" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                                <span class="contact-icon"><a href="mailto:mary@blueshiftedtech.com" target="_blank"><span class="icon fa-envelope"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+									<div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/anthony.png" %}" alt="" />
+                                            <span class="contact-icon-set">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/in/anthonyclever" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                                <span class="contact-icon"><a href="mailto:anthony@blueshiftedtech.com" target="_blank"><span class="icon fa-envelope"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="6u">
+                                        <div class="image fit no-overlay">
+                                            <img src="{% static "images/joe.png" %}" alt="" />
+                                            <span class="contact-icon-set-right">
+                                                <span class="contact-icon"><a href="https://www.linkedin.com/in/joeobjo" target="_blank"><span class="icon fa-linkedin"></span></a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Third -->
+			<section id="third" class="main">
+				<header>
+					<div class="container">
+						<h2>Wired in and on deck.</h2>
+						<p style="text-align: left">We've helped organize, lead, spoken at, and attended nearly every regional technology
+                        and startup conference in the midwest. Our agency has been involved in the Python, Ruby, and JavaScript
+                        communities in Columbus, Ohio for over 5 years. Our founders are the organizers and board members of the
+						second largest Python conference in the United States. We know our stuff and we thrive on sharing our knowledge
+                        and passion with everyone we meet.
+						</p>
+
+                        <h2 style="margin-top:2em">Here are a few places you'll find us.</h2>
+
+                        {% block organizations %}{% endblock %}
+					</div>
+				</header>
+				<div class="content dark style3 blog">
+					<div class="container">
+						<span class="image featured"><img src="{% static "images/rust.jpg" %}" alt="" /></span>
+						<div class="row">
+							<div class="4u 12u(narrow)">
+                                <p><i>An example of the kinds of things we teach and talk about at conferences.</i></p>
+								<h2>The 7 Deadly Sins of Software Agility.</h2>
+
+                                <p>Everyone has heard of the unicorn Agile team who moves at lightspeed yet when businesses
+                                try to implement Agile processes they often fail. This list highlights the most common
+                                problems that we've seen with Agile implementations in our clients.</p>
+
+                                <h3>#1 — Lack of Commitment</h3>
+                                <p>One of the most dangerous myths surrounding Agile is that it can fit snugly within your
+                                existing engineering processes. This isn't true. The core elements that make up an Agile
+                                framework are heavily interdependent, and removing them in an attempt to keep your existing
+                                processes will result in greatly diminished returns on your investment.
+                                </p>
+
+                                <h3>#2 — Poor Team Stability</h3>
+                                <p>There are few things as damaging to your team velocity as team instability. Agility
+                                depends on well functioning teams that have taken the time to gel. Every time you hire, fire,
+                                or move someone between teams, you will experience a nose dive in productivity. This is
+                                especially true of startups who have high contractor and consultant turnover.
+                                </p>
+
+							</div>
+							<div class="4u 12u(narrow)">
+                                <h3>#3 — Poor Testing Habits</h3>
+                                <p>In the very early stages of a startup, investing in well tested software is a
+                                mistake. The point at this stage is to validate the business. You should build a quick,
+                                and dirty prototype. However, it would be a mistake to take that untested and
+                                unstable prototype and try to shove it into production. Throw it away! Building
+                                the same software from scratch in a test driven approach will net you huge
+                                gains (often a lot sooner than you think).
+                                </p>
+
+                                <h3>#4 — Blocking Code Reviews</h3>
+                                <p>We're big fans of code review at Blueshift. We review each other's code
+                                constantly and we pair together on solutions as many chances as we get. However,
+                                we often see code review being abused by teams as a collaboration tool.
+                                Teams should collaborate before a single line of code is ever written, not
+                                after the code is written and submitted for review. Code review is a place
+                                for empathic feedback, mentorship, and learning. It should never block
+                                others from getting their work done.
+                                </p>
+
+                                <h3>#5 — Refactoring Too Early</h3>
+								<p>This is a big engineering canary-in-the-coal-mine. Agile tells
+                                us to avoid big up-front design. Still, many programmers when
+                                given requirements for simple problems build large complex (and
+                                sometime convoluted) software architectures. Nearly always,
+                                a simpler more straight forward approach is superior. You should
+                                never do more work, than what is required to meet the current
+                                requirements.
+                                </p>
+
+							</div>
+							<div class="4u 12u(narrow)">
+                                <h3>#6 — Not Refactoring Enough</h3>
+								<p>However, all code eventually reaches a size where it becomes increasingly costly
+                                to implement new features. One of the worst things you can do is
+                                ignore this and pile on tech-debt. Unlike most debt, tech-debt has a very
+                                high interest rate. It should be sought out and destroyed as often as
+                                possible. Your team should constantly be reworking, refactoring, and
+                                rearchitecting the codebase as new features are implemented.
+                                </p>
+
+                                <h3>#7 — Fear of Failure</h3>
+                                <p>You are going to introduce bugs in your code, you are going to miss
+                                deadlines, and you are going to eventually put breaking software into
+                                production. It happens to everyone, and it is unavoidable. The key to
+                                success, is being able to respond to these mistakes as fast as possible.
+                                </p>
+
+                                <p>Be bold. Try risky things, but have an engine in place to recover
+                                from them quickly. If you are delivering every day, and you break
+                                something, it will be broken for a day. If you are releasing once a
+                                month, and you break something, it will be broken for a month. You're
+                                going to break something eventually, so you might as well <b>move fast</b>.
+                                </p>
+
+								<footer>
+									<a href="#fourth" class="button scrolly">Let us show you how.</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Fourth -->
+			<section id="fourth" class="main">
+				<header>
+					<div class="container">
+						<h2>Magical things happen when people collaborate.</h2>
+						<p style="text-align: center">Let's get together for coffee and talk about what you're working on. Maybe we can help.</p>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container 75%">
+						<form method="post" action="/mail">
+                            {% csrf_token %}
+							<div class="row 50%">
+								<div class="6u 12u(mobile)"><input name="name" type="text" placeholder="Name" /></div>
+								<div class="6u 12u(mobile)"><input name="email" type="text" placeholder="Email" /></div>
+							</div>
+							<div class="row 50%">
+								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" class="button" value="Send Message" /></li>
+										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Blueshift Technology Group, LLC. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="{% static "js/jquery.min.js" %}"></script>
+			<script src="{% static "js/jquery.scrolly.min.js" %}"></script>
+			<script src="{% static "js/skel.min.js" %}"></script>
+			<script src="{% static "js/util.js" %}"></script>
+			<!--[if lte IE 8]><script src="{% static "js/ie/respond.min.js" %}"></script><![endif]-->
+			<script src="{% static "js/main.js" %}"></script>
+            <script src="{% static "js/owl.carousel.js"%}"></script>
+
+	</body>
+</html>
