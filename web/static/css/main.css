@@ -2476,10 +2476,16 @@
 	}
 
 	.center-header {
-		width: 750px;
+		width: 751px;
 		margin: 0 auto;
 	}
 
+}
+
+@media screen and (min-width: 1281px) {
+	.center-header {
+		width: 823px;
+	}
 }
 
 @media screen and (max-width: 657px) {
